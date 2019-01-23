@@ -24,9 +24,12 @@ Route::get('contact', function () {
 Route::get('/layout', function () {
     return view('layout');
 });
-Route::get('/compaign', function () {
-    return view('compaign');
+Route::get('/campaign', function () {
+    return view('campaign');
 });
-Route::get('/createcompaign', function () {
-    return view('createcompaign');
+Route::get('/createcampaign', function () {
+    return view('createcampaign');
+});
+Route::get('/templates', function () {
+    return view('templates');
 });

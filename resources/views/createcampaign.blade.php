@@ -53,31 +53,39 @@
       </div>
     </nav>
 
-    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
-      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Create Campaign</h1>
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+          <div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+               <div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                    <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0">
+                    </div>
+               </div>
+               <div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                    <div style="position:absolute;width:200%;height:200%;left:0; top:0">
+                    </div>
+               </div>
+          </div>
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+             <h1 class="h2">Create Campaign</h1>
         </div>
-  <form>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">To</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="abc@example.com">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControl1">Subject</label>
-    <input type="text" class="form-control" id="exampleFormControl1" placeholder="subject">
+        <form>
+              <div class="form-group">
+                   <label for="exampleFormControlInput1">To</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="abc@example.com">
+              </div>
+              <div class="form-group">
+                   <label for="exampleFormControl1">Subject</label>
+                   <input type="text" class="form-control" id="exampleFormControl1" placeholder="subject">
     
-  </div>
-  <div class="form-group">
-    
-  </div>
-<div style="margin-bottom:1%;">  <a class="btn btn-primary" href="/templates" role="button">+ templates</a>
-  <a class="btn btn-success " href="/template" role="button">save as new template</a>
-</div>
-  <div class="form-group">
-  <label for="exampleFormControl1">Content</label>
-    <textarea class="form-control" rows="6"></textarea>
-  </div>
-</form>
-   </main>
+              </div>
+          
+              <div style="margin-bottom:1%;">  <a class="btn btn-primary" href="/templates" role="button">+ templates</a>
+                   <a class="btn btn-success " href="/template" role="button">save as new template</a>
+              </div>
+              <div class="form-group">
+                   <label for="exampleFormControl1">Content</label>
+                   <textarea class="form-control" rows="6"></textarea>
+              </div>
+        </form>
+    </main>
    
 @endsection

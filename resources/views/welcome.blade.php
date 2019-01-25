@@ -22,7 +22,7 @@
                 margin: 0;
             }
            body{
-               background-image: url(https://wallpaperplay.com/walls/full/e/9/4/171072.jpg);
+               background-image: url(http://kaleb.info/wp-content/uploads/2018/11/dazzling-design-inspiration-wood-wall-paper-collection-of-wallpaper-hd-on-hdwallpapers-wallpapers-for-walls-iphone-home.jpg);
                
            }
 

@@ -22,7 +22,7 @@
                 margin: 0;
             }
            body{
-               background-image: url(https://wallpaperplay.com/walls/full/e/9/4/171072.jpg);
+               background-image: url(https://static.vecteezy.com/system/resources/previews/000/119/348/large_2x/vintage-background-texture-vector.jpg);
                
            }
 

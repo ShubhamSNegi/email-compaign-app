@@ -1,4 +1,5 @@
 @extends('layouts.app')
+
 @section('content')
 <div>
     <div class="row justify-content-center">
@@ -67,14 +68,16 @@
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
              <h1 class="h2">Create Campaign</h1>
         </div>
-        <form>
+      
+        <form method="POST" action="{{url('/createcampaign')}}">
+             {{csrf_field()}}
               <div class="form-group">
                    <label for="exampleFormControlInput1">To</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="abc@example.com">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="abc@example.com" name="email">
               </div>
               <div class="form-group">
                    <label for="exampleFormControl1">Subject</label>
-                   <input type="text" class="form-control" id="exampleFormControl1" placeholder="subject">
+                   <input type="text" class="form-control" id="exampleFormControl1" placeholder="subject" name="Subject">
     
               </div>
           
@@ -83,8 +86,9 @@
               </div>
               <div class="form-group">
                    <label for="exampleFormControl1">Content</label>
-                   <textarea class="form-control" rows="6"></textarea>
+                   <textarea class="form-control" rows="6" name="content"></textarea>
               </div>
+              <button class="btn btn-primary" type="submit">Submit</button>
         </form>
     </main>
    

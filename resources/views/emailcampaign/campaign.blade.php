@@ -75,23 +75,26 @@
               </span>
             </div>
           </div>
+
+  
     </div>
 <table class="table table-striped">
   <thead>
     <tr>
+      <th scope="col">S.no</th>
       <th scope="col">List</th>
       <th scope="col">Subject</th>
-      <th scope="col">Email Id </th>
+      <th scope="col">Email Id</th>
     </tr>
   </thead>
   <tbody>
-  @foreach($allcamps as  $campi)    
     <tr>
-      <td>{{$campi['id']}}</td>
-      <td>{{$campi['Subject']}}</td>
-      <td>{{$campi['email']}}</td>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
     </tr>
-    @endforeach
+  
   </tbody>
 </table>
 

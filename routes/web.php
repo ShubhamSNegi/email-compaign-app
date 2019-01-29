@@ -18,15 +18,18 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/campaign', 'createCampaignContoller@index');
+Route::post('/createcampaign', 'createCampaignContoller@store');
+
 Route::get('contact', function () {
     return view('contact');
 });
 Route::get('/layout', function () {
     return view('layout');
 });
-Route::get('/campaign', function () {
-    return view('campaign');
-});
+// Route::get('/campaign', function () {
+//      return view('campaign');
+//  });
 Route::get('/createcampaign', function () {
     return view('createcampaign');
 });

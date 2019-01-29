@@ -53,7 +53,7 @@
       </div>
     </nav>
 
-   <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
           <div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
                <div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
                     <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0">
@@ -64,38 +64,49 @@
                     </div>
                </div>
           </div>
-    <div class="d-flex justify-content-end flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3  border-bottom">
-         <h1 class="h2 p-2 flex-grow-1 ">Campaign</h1>   
-         <a class="btn btn-outline-primary" href="/createcampaign" role="button">+ Create Campaign</a> 
-          <div class="col-lg-3" >
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search">
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="button">Go!</button>
-              </span>
-            </div>
-          </div>
-    </div>
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">List</th>
-      <th scope="col">Subject</th>
-      <th scope="col">Email Id </th>
-    </tr>
-  </thead>
-  <tbody>
-  @foreach($allcamps as  $campi)    
-    <tr>
-      <td>{{$campi['id']}}</td>
-      <td>{{$campi['Subject']}}</td>
-      <td>{{$campi['email']}}</td>
-    </tr>
-    @endforeach
-  </tbody>
-</table>
-
-    </main>
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+             <h1 class="h2">Templates</h1>
+             <div class="col-lg-3" >
+                  <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search">
+                            <span class="input-group-btn">
+                                  <button class="btn btn-default" type="button">Go!</button>
+                            </span>
+                  </div>
+             </div>
+        </div>
+  <div class="row">
+  <div class="col-sm-6 col-md-4">
+  <div class="card" style="width: 18rem;">
+  <img src="https://theemon.com/wp-content/uploads/2015/11/MODERN-Responsive-Email-Template-1.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">TITLE</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">OPEN TEMPLATE</a>
   </div>
 </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+  <div class="card" style="width: 18rem;">
+  <img src="https://theemon.com/wp-content/uploads/2015/11/MODERN-Responsive-Email-Template-1.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">OPEN TEMPLATE</a>
+  </div>
+</div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+  <div class="card" style="width: 18rem;">
+  <img src="https://theemon.com/wp-content/uploads/2015/11/MODERN-Responsive-Email-Template-1.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">OPEN TEMPLATE</a>
+  </div>
+</div>
+    </div>
+    </div>
+      </main>
+  
 @endsection

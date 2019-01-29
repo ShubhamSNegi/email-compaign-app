@@ -53,7 +53,7 @@
       </div>
     </nav>
 
-   <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
           <div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
                <div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
                     <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0">
@@ -64,38 +64,29 @@
                     </div>
                </div>
           </div>
-    <div class="d-flex justify-content-end flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3  border-bottom">
-         <h1 class="h2 p-2 flex-grow-1 ">Campaign</h1>   
-         <a class="btn btn-outline-primary" href="/createcampaign" role="button">+ Create Campaign</a> 
-          <div class="col-lg-3" >
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search">
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="button">Go!</button>
-              </span>
-            </div>
-          </div>
-    </div>
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">List</th>
-      <th scope="col">Subject</th>
-      <th scope="col">Email Id </th>
-    </tr>
-  </thead>
-  <tbody>
-  @foreach($allcamps as  $campi)    
-    <tr>
-      <td>{{$campi['id']}}</td>
-      <td>{{$campi['Subject']}}</td>
-      <td>{{$campi['email']}}</td>
-    </tr>
-    @endforeach
-  </tbody>
-</table>
-
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+             <h1 class="h2">Create Campaign</h1>
+        </div>
+        <form method="post" action="{{url('createCampaignContoller')}}">
+              <div class="form-group">
+                   <label for="exampleFormControlInput1">To</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="abc@example.com" name="email">
+              </div>
+              <div class="form-group">
+                   <label for="exampleFormControl1">Subject</label>
+                   <input type="text" class="form-control" id="exampleFormControl1" placeholder="subject" name="subject">
+    
+              </div>
+          
+              <div style="margin-bottom:1%;">  <a class="btn btn-primary" href="/templates" role="button">+ templates</a>
+                   <a class="btn btn-success " href="/template" role="button">save as new template</a>
+              </div>
+              <div class="form-group">
+                   <label for="exampleFormControl1">Content</label>
+                   <textarea class="form-control" rows="6" name="content"></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
     </main>
-  </div>
-</div>
+   
 @endsection

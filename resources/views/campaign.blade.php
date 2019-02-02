@@ -1,5 +1,9 @@
 @extends('layouts.app')
 @section('content')
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    
 <div>
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -76,20 +80,23 @@
             </div>
           </div>
     </div>
-<table class="table table-striped">
+
+<table class="table table-striped table-hover">
   <thead>
     <tr>
       <th scope="col">List</th>
       <th scope="col">Subject</th>
       <th scope="col">Email Id </th>
+      <th scope="col">Created_Date </th>
     </tr>
   </thead>
   <tbody>
-  @foreach($allcamps as  $campi)    
-    <tr>
-      <td>{{$campi['id']}}</td>
-      <td>{{$campi['Subject']}}</td>
-      <td>{{$campi['email']}}</td>
+  @foreach($allcampaignparameters as  $campaignparameter)    
+    <tr class="data-href='/createcampaign'" style="cursor:pointer">
+      <td>{{$campaignparameter['id']}}</td>
+      <td>{{$campaignparameter['Subject']}}</td>
+      <td>{{$campaignparameter['email']}}</td>
+      <td>{{$campaignparameter['created_at']}}</td>
     </tr>
     @endforeach
   </tbody>
@@ -98,4 +105,5 @@
     </main>
   </div>
 </div>
+
 @endsection

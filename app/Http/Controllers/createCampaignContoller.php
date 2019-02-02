@@ -8,8 +8,8 @@ class createCampaignContoller extends Controller
 {   
     public function index()
         {
-           $camps = \App\createtemplates::all();
-           return view('/campaign')->with('allcamps',$camps);
+           $allcampaignparameters = \App\createtemplates::all();
+           return view('/campaign')->with('allcampaignparameters',$allcampaignparameters);
         }
     
     public function store(Request $request){

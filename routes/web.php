@@ -20,7 +20,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/campaign', 'createCampaignContoller@index');
 Route::post('/createcampaign', 'createCampaignContoller@store');
-
+Route::get('/templates', 'TemplatesController@index');
+Route::post('/createTemplate', 'TemplatesController@store');
 Route::get('contact', function () {
     return view('contact');
 });
@@ -29,10 +30,13 @@ Route::get('/layout', function () {
 });
 // Route::get('/campaign', function () {
 //      return view('campaign');
-//  });
+// });
+ Route::get('/createTemplate', function () {
+     return view('createtemplate');
+});
 Route::get('/createcampaign', function () {
     return view('createcampaign');
 });
-Route::get('/templates', function () {
-    return view('templates');
-});
+// Route::get('/templates', function () {
+//     return view('templates');
+// });
